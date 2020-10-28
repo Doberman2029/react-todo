@@ -1,38 +1,83 @@
-.App {
+.list {
+  margin: 20px auto;
+  max-width: 1000px;
+  background-color: rgba(255, 200, 148, 0.2);
+  padding: 10px;
+}
+.list__empty {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.items {
+  padding-top: 10px;
+  padding-left: 0px;
+  margin: 20px;
+  background-color: rgb(187, 186, 186);
+  border-radius: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.items__empty {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px 35px;
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.item {
+  padding: 10px 0px 10px 20px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  border-bottom: 2px solid black;
 }
-
-.App-link {
-  color: #61dafb;
+.item.check {
+  text-decoration: line-through;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item:last-child {
+  border-bottom: 0px solid transparent;
+}
+.item__title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.item__description {
+  border: 1px solid black;
+  padding: 20px;
+  margin-right: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.item__btn {
+  float: right;
+  margin: 0px 10px 10px 10px;
+  cursor: pointer;
+}
+.item__checkbox {
+  cursor: pointer;
+}
+.emptyTodo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.create__form {
+  padding-top: 20px;
+}
+.create__btn {
+  border-color: transparent;
+  border-radius: 5px;
+  height: 20px;
+  width: 208px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.create__btn.disabled {
+  cursor: default;
+}
+.create__input {
+  display: block;
+  height: 20px;
+  width: 200px;
+  margin: 10px;
+  outline: none;
+}
+.sortng__radio {
+  cursor: pointer;
 }
