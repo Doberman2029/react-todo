@@ -13,21 +13,27 @@ export default function TodoCreator({
       : true;
 
   return (
-    <form className="create__form">
-      <input
-        className="create__input"
-        onChange={(e) => titelHandler(e)}
-        value={titleInput}
-        placeholder="Title"
-      />
-      <input
-        className="create__input"
-        onChange={(e) => descriptionHandler(e)}
-        value={descriptionInput}
-        placeholder="Description"
-      />
+    <form className="w-25">
+      <div className="form-group">
+        <input
+          className="form-control mb-1"
+          onChange={(e) => titelHandler(e)}
+          value={titleInput}
+          placeholder="Title"
+        />
+        <input
+          className="form-control"
+          onChange={(e) => descriptionHandler(e)}
+          value={descriptionInput}
+          placeholder="Description"
+        />
+      </div>
       <button
-        className={validation ? "create__btn disabled" : "create__btn"}
+        className={
+          validation
+            ? "btn btn-outline-secondary disabled w-100"
+            : "btn btn-outline-secondary w-100"
+        }
         onClick={newTodo}
         disabled={validation}
       >

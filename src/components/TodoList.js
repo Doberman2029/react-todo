@@ -45,7 +45,7 @@ export default function TodoList() {
   };
 
   return (
-    <div className="list">
+    <div className="list bg-light">
       <TodoCreator
         titelHandler={titleInputHandler}
         descriptionHandler={descriptionInputHandler}
